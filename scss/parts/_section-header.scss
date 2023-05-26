@@ -27,8 +27,8 @@
     height: 35px;
     margin-left: -10px;
     margin-bottom: -30px;
-   border-left: 1px solid colors.$c-tertiary;
-    color: colors.$c-tertiary;
+   border-left: 1px solid colors.$c-secondary;
+    color: colors.$c-secondary;
 
     @media screen and (min-width: breakpoints.$bp-xl) {
       height: 70px;
@@ -43,8 +43,8 @@
     height: 35px;
     margin-left: 200px;
     margin-top: -28px;
-    border-left: 1px solid colors.$c-tertiary;
-    color: colors.$c-tertiary;
+    border-left: 1px solid colors.$c-secondary;
+    color: colors.$c-secondary;
 
     @media screen and (min-width:breakpoints.$bp-xl) {
       content: none;
@@ -53,7 +53,7 @@
 }
 
 .price__header--modification {
-  color: colors.$c-tertiary;
+  color: colors.$c-secondary;
   font-family: fonts.$f-primary;
   text-transform: uppercase;
   font-size: 28px;
@@ -68,7 +68,7 @@
 }
 
 .form__header {
-  color: colors.$c-tertiary;
+  color: colors.$c-secondary;
   font-family: fonts.$f-primary;
   text-transform: uppercase;
   font-size: 20px;

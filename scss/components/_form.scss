@@ -15,11 +15,11 @@
 }
 
 .form__label {
-  color: colors.$c-tertiary;
+  color: colors.$c-secondary;
   font-family: fonts.$f-primary;
 
   &--checkbox {
-    color: colors.$c-tertiary;
+    color: colors.$c-secondary;
     font-size: 18px;
 
     @media (min-width: breakpoints.$bp-l) {

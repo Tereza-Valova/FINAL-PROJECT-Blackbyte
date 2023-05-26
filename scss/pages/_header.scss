@@ -34,7 +34,7 @@
     font-size: 14px;
 
     & :hover {
-      color: colors.$c-tertiary;
+      color: colors.$c-secondary;
     }
 
     @media screen and (min-width: breakpoints.$bp-s) {
@@ -65,7 +65,7 @@
       left: 0;
       width: 100%;
       height: 0.1em;
-      background-color: colors.$c-tertiary;
+      background-color: colors.$c-secondary;
       opacity: 1;
       transition: opacity 300ms, transform 300ms;
       transform: scale(0);
@@ -100,7 +100,7 @@
 
       &:hover {
         padding-left: 10px;
-        border-left: 2px solid colors.$c-tertiary;
+        border-left: 2px solid colors.$c-secondary;
         transition: all 0.3s ease;
       }
     }
