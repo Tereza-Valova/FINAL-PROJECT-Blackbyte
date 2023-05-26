@@ -1,0 +1,19 @@
+@use "../project/colors";
+
+.aside,
+.header,
+.hero, 
+.services,
+.about-us,
+.price,
+.blockquote, 
+.footer,
+.form {
+    margin: 0 auto;
+    max-width: 1600px;
+    background-color: colors.$c-primary-theme;
+}
+
+.blockquote {
+    background-color: colors.$c-secondary;
+}

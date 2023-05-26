@@ -1,0 +1,36 @@
+//base
+@use "../scss/base/base";
+@use "../scss/base/body";
+
+
+// components
+@use "../scss/components/button";
+@use "../scss/components/card";
+@use "../scss/components/form";
+@use "../scss/components/navbar";
+
+// layout
+@use "../scss/layout/grid";
+@use "../scss/layout/layout";
+@use "../scss/layout/wrapper";
+
+// pages
+@use "../scss/pages/about-us";
+@use "../scss/pages/aside";
+@use "../scss/pages/blockquote";
+@use "../scss/pages/footer";
+@use "../scss/pages/header";
+@use "../scss/pages/hero";
+@use "../scss/pages/price";
+@use "../scss/pages/services";
+
+//parts
+@use "../scss/parts/section-header";
+@use "../scss/parts/section-size";
+@use "../scss/parts/text";
+
+//project
+@use "../scss/project/breakpoints";
+@use "../scss/project/colors";
+@use "../scss/project/fonts";
+@use "../scss/project/spacer";

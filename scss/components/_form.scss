@@ -1,0 +1,62 @@
+@use "../project/breakpoints";
+@use "../project/colors";
+@use "../project/spacer";
+@use "../project/fonts";
+
+.form {
+  padding: spacer.$primary-spacer 0;
+  box-shadow: 0 2px 5px 0 colors.$c-secondary;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: spacer.$primary-spacer;
+
+  @media (min-width: 1000px) {
+    padding: spacer.$double-spacer 0;
+  }
+}
+
+.form__label {
+  color: colors.$c-tertiary;
+  font-family: fonts.$f-primary;
+
+  &--checkbox {
+    color: colors.$c-tertiary;
+    font-size: 18px;
+
+    @media (min-width: breakpoints.$bp-l) {
+      font-size: 24px;
+    }
+  }
+}
+
+.form__input {
+  padding: calc(spacer.$half-spacer/2);
+  margin: spacer.$half-spacer 0 spacer.$primary-spacer 0;
+  font-size: 20px;
+  width: 100%;
+  background-color: colors.$c-primary;
+  border-radius: calc(spacer.$half-spacer/2);
+  font-family: fonts.$f-secondary;
+
+  @media (min-width: breakpoints.$bp-l) {
+    font-size: 28px;
+  }
+
+  &--checkbox {
+    margin: spacer.$half-spacer calc(spacer.$half-spacer/2);
+  }
+
+  &--message {
+    font-size: 16px;
+    color: colors.$c-additional;
+    margin-bottom: spacer.$primary-spacer;
+
+    @media (min-width: breakpoints.$bp-l) {
+      font-size: 20px;
+    }
+  }
+}
+
+.wrapper .form {
+  background-color: colors.$c-additional-opacity;
+}

@@ -1,0 +1,19 @@
+.blockquote {
+  color: #000000;
+  background-color: #349391;
+  font-family: "Jura", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 60px;
+}
+@media (min-width: 800px) {
+  .blockquote {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .blockquote {
+    font-size: 36px;
+  }
+}

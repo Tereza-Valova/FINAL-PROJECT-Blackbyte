@@ -1,0 +1,119 @@
+@use "../project/breakpoints";
+@use "../project/colors";
+@use "../project/spacer";
+@use "../project/fonts";
+
+
+
+.header {
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    max-height: 80px;
+
+    @media screen and (min-width: breakpoints.$bp-xl) {
+      max-height: 130px;
+      margin: 0;
+    }
+  }
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+
+  &__menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    gap: spacer.$primary-spacer;
+    font-family: fonts.$f-primary;
+    font-size: 14px;
+
+    & :hover {
+      color: colors.$c-tertiary;
+    }
+
+    @media screen and (min-width: breakpoints.$bp-s) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: breakpoints.$bp-xl) {
+      font-size: 20px;
+    }
+  }
+}
+
+.menu__item {
+  color: colors.$c-primary;
+
+  &--style {
+    color: colors.$c-primary;
+    text-align: center;
+    text-decoration: none;
+
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      height: 0.1em;
+      background-color: colors.$c-tertiary;
+      opacity: 1;
+      transition: opacity 300ms, transform 300ms;
+
+      transform: scale(0);
+      transform-origin: center;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform: scale(1);
+    }
+  }
+}
+
+.dropbox {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: none;
+  background: colors.$c-primary-theme;
+  z-index: 100;
+
+  &__item {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: spacer.$half-spacer;
+
+    &--style {
+      transition: all 0.5s ease;
+      text-decoration: none;
+      color: colors.$c-primary;
+
+      &:hover {
+        padding-left: 10px;
+        border-left: 2px solid colors.$c-tertiary;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+.menu__item:hover > .dropbox,
+.dropbox:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding: spacer.$primary-spacer;
+}

@@ -1,0 +1,45 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 50px 40px;
+  background-color: #202020;
+}
+.wrapper--footer {
+  background-image: linear-gradient(rgba(64, 63, 63, 0.45), rgba(52, 147, 145, 0.35)), url(../images/bubbles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper--full-screen {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.wrapper--inner {
+  padding: 0 50px 40px;
+}
+.wrapper--inner--layer {
+  background: #01010140;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #349391;
+  padding: 40px;
+  margin: 20px 20px 40px 20px;
+  border-radius: 5px;
+}
+@media (min-width: 1200px) {
+  .wrapper--inner {
+    padding: 0 120px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrapper--inner--back {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.wrapper--inner--form {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}

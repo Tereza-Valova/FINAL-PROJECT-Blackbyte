@@ -1,0 +1,35 @@
+@use "../project/breakpoints";
+@use "../project/colors";
+@use "../project/spacer";
+@use "../project/fonts";
+
+
+.colums--two--footer {
+  @media (min-width: breakpoints.$bp-xl) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  &__information {
+    color: colors.$c-secondary;
+    font-family: fonts.$f-secondary;
+    text-transform: uppercase;
+  }
+
+  &__phone,
+  &__mail,
+  &__address {
+    @media (min-width: breakpoints.$bp-xl) {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+
+  &__address {
+    @media (min-width: breakpoints.$bp-xl) {
+      padding-top: spacer.$double-spacer;
+      margin-top: spacer.$half-spacer;
+    }
+  }
+}

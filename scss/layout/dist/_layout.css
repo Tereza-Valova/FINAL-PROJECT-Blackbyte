@@ -1,0 +1,17 @@
+.aside,
+.header,
+.hero,
+.services,
+.about-us,
+.price,
+.blockquote,
+.footer,
+.form {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: #202020;
+}
+
+.blockquote {
+  background-color: #349391;
+}

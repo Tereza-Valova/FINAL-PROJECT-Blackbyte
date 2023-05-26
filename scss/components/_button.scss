@@ -1,0 +1,114 @@
+@use "../project/breakpoints";
+@use "../project/fonts";
+@use "../project/colors";
+@use "../project/spacer";
+
+.button {
+  background: colors.$c-secondary-theme;
+  box-shadow: 0 2px 5px 0 colors.$c-secondary;
+  backdrop-filter: blur(1px);
+  padding: spacer.$half-spacer spacer.$primary-spacer;
+  border-radius: spacer.$double-spacer;
+  color: colors.$c-primary;
+  display: inline-block;
+  cursor: pointer;
+  font-family: fonts.$f-primary;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px;
+  text-decoration: none;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  transition: all ease 0.2s;
+
+  &:hover {
+    transform: translateY(5px);
+    box-shadow: inset 0px 20px 20px 2px rgba(0, 255, 255, 0.7);
+  }
+
+  &__offer {
+    width: 50;
+    margin: 0 auto;
+    padding: spacer.$s-spacer;
+    margin-top: 20%;
+    margin-left: 40%;
+
+    @media screen and (min-width: breakpoints.$bp-xs) {
+      margin-left: 45%;
+    }
+
+    @media screen and (min-width: breakpoints.$bp-xs-extra) {
+      margin-top: 10%;
+    }
+
+    @media screen and (min-width: breakpoints.$bp-s) {
+      margin-top: -10%;
+      margin-left: 60%;
+    }
+
+    @media screen and (min-width: breakpoints.$bp-xl) {
+      margin-top: 5%;
+      margin-left: 45%;
+    }
+  }
+
+  &__price {
+    padding: spacer.$primary-spacer spacer.$double-spacer;
+
+    &--side {
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+
+        
+        @media (min-width:breakpoints.$bp-m) {
+           
+            width: 80%;
+         
+          }
+
+
+        @media (min-width:breakpoints.$bp-l) {
+      padding: spacer.$special-spacer spacer.$double-special-spacer;
+      width: 60%;
+   
+    }}
+  }
+
+  &__aside {
+    padding: spacer.$s-spacer spacer.$xs-spacer;
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+    background: colors.$c-secondary-layer;
+    color: colors.$c-primary;
+    border-radius: spacer.$half-spacer;
+    font-family: fonts.$f-primary;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+    transition: all ease 0.2s;
+
+    &--active {
+      background-color: colors.$c-secondary;
+      box-shadow: none;
+      transition: none;
+
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+
+    @media (min-width: breakpoints.$bp-xl) {
+      padding: spacer.$double-special-spacer;
+      font-size: 20px;
+    }
+  }
+
+  &__form {
+    background: colors.$c-secondary;
+
+    @media (min-width: breakpoints.$bp-xl) {
+      padding: spacer.$primary-spacer spacer.$double-special-spacer;
+      font-size: 20px;
+    }
+  }
+}

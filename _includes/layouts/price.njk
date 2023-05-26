@@ -1,0 +1,25 @@
+{% include "partials/baseHtml.njk" %}
+
+<body>
+
+    <div class="wrapper">
+  
+  
+
+    {% include "partials/header-side.njk" %}
+
+     {% include "partials/aside.njk" %}
+
+
+    {{ content | safe }}
+
+   {% include "partials/price-side.njk" %}
+
+
+      {% include "partials/footer.njk" %}
+
+      </div>
+     
+</body>
+
+</html>

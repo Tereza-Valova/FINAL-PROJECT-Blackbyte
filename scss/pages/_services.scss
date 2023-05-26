@@ -1,0 +1,72 @@
+@use "../project/colors";
+@use "../project/fonts";
+@use "../project/spacer";
+@use "../project/breakpoints";
+
+.services__offer {
+  position: relative;
+  padding-bottom: spacer.$double-spacer;
+  padding-left:spacer.$primary-spacer;
+ 
+}
+
+.offer {
+  &__image {
+    max-height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0px 1px 10px 0px rgba(52, 147, 145, 1);
+
+    @media screen and (min-width: breakpoints.$bp-s) {
+      max-height: 230px;
+    }
+  }
+
+  &__text {
+    font-family: fonts.$f-secondary;
+    color: colors.$c-primary;
+    margin: 0 spacer.$primary-spacer;
+    padding: spacer.$half-spacer spacer.$primary-spacer;
+    background-color: colors.$c-layer;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    max-width: 600px;
+    height: 170px;
+   
+
+    @media screen and (min-width: breakpoints.$bp-s) {
+      height: 180px;
+      padding: spacer.$primary-spacer spacer.$double-spacer;
+    }
+
+    @media screen and (min-width: breakpoints.$bp-l) {
+      max-width: 400px;
+    }
+
+    @media screen and (min-width: breakpoints.$bp-xl) {
+      height: 200px;
+    }
+  }
+
+  &__main-text {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: spacer.$half-spacer;
+
+    @media screen and (min-width: 600px) {
+      font-size: 20px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+
+    @media screen and (min-width: breakpoints.$bp-s) {
+      font-size: 16px;
+    }
+  }
+}

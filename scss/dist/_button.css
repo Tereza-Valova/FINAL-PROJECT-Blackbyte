@@ -1,0 +1,95 @@
+.button {
+  background: #000000;
+  box-shadow: 0 2px 5px 0 #349391;
+  backdrop-filter: blur(1px);
+  padding: 10px 20px;
+  border-radius: 40px;
+  color: #DFDFDF;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Jura", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px;
+  text-decoration: none;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  transition: all ease 0.2s;
+}
+.button:hover {
+  transform: translateY(5px);
+  box-shadow: inset 0px 20px 20px 2px rgba(0, 255, 255, 0.7);
+}
+.button__offer {
+  width: 50;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 20%;
+  margin-left: 40%;
+}
+@media screen and (min-width: 400px) {
+  .button__offer {
+    margin-left: 45%;
+  }
+}
+@media screen and (min-width: 430px) {
+  .button__offer {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .button__offer {
+    margin-top: -10%;
+    margin-left: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button__offer {
+    margin-top: 5%;
+    margin-left: 45%;
+  }
+}
+.button__price {
+  padding: 20px 40px;
+}
+.button__price--side {
+  padding: 30px 60px;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+.button__aside {
+  padding: 15px 5px;
+  margin: 0;
+  text-align: center;
+  font-size: 10px;
+  background: #01010140;
+  color: #DFDFDF;
+  border-radius: 10px;
+  font-family: "Jura", sans-serif;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  transition: all ease 0.2s;
+}
+.button__aside--active {
+  background-color: #349391;
+  box-shadow: none;
+  transition: none;
+}
+.button__aside--active:hover {
+  transform: none;
+  box-shadow: none;
+}
+@media (min-width: 1200px) {
+  .button__aside {
+    padding: 60px;
+    font-size: 20px;
+  }
+}
+.button__form {
+  background: #349391;
+}
+@media (min-width: 1200px) {
+  .button__form {
+    padding: 20px 60px;
+    font-size: 20px;
+  }
+}

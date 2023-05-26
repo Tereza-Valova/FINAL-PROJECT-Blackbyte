@@ -1,0 +1,24 @@
+@use "../project/breakpoints";
+@use "../project/colors";
+@use "../project/spacer";
+@use "../project/fonts";
+
+.blockquote {
+  color: colors.$c-secondary-theme;
+  background-color: colors.$c-secondary;
+
+  font-family: fonts.$f-primary;
+  font-size: 24px;
+  text-align: center;
+  padding-top: spacer.$special-spacer; 
+  padding-bottom: spacer.$double-special-spacer;
+  box-shadow: 0px 1px 10px -2px rgba(5, 255, 251, 1);
+
+  @media (min-width: breakpoints.$bp-m) {
+    font-size: 28px;
+  }
+
+  @media (min-width: breakpoints.$bp-xl) {
+    font-size: 36px;
+  }
+}

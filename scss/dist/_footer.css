@@ -1,0 +1,24 @@
+@media (min-width: 1200px) {
+  .colums--two--footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+.colums--two--footer__information {
+  color: #349391;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .colums--two--footer__phone, .colums--two--footer__mail, .colums--two--footer__address {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .colums--two--footer__address {
+    padding-top: 40px;
+    margin-top: 10px;
+  }
+}

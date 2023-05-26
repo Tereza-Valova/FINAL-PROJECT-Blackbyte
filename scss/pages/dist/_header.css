@@ -1,0 +1,101 @@
+.header__logo {
+  display: block;
+  margin: 0 auto;
+  max-height: 80px;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    max-height: 130px;
+    margin: 0;
+  }
+}
+.header__menu {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+.header__menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  gap: 20px;
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+}
+.header__menu ul :hover {
+  color: #05fffb;
+}
+@media screen and (min-width: 600px) {
+  .header__menu ul {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__menu ul {
+    font-size: 20px;
+  }
+}
+
+.menu__item {
+  color: #DFDFDF;
+}
+.menu__item--style {
+  color: #DFDFDF;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+.menu__item--style::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #05fffb;
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+  transform: scale(0);
+  transform-origin: center;
+}
+.menu__item--style:hover::after, .menu__item--style:focus::after {
+  transform: scale(1);
+}
+
+.dropbox {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: none;
+  background: #202020;
+  z-index: 100;
+}
+.dropbox__item {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.dropbox__item--style {
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: #DFDFDF;
+}
+.dropbox__item--style:hover {
+  padding-left: 10px;
+  border-left: 2px solid #05fffb;
+  transition: all 0.3s ease;
+}
+
+.menu__item:hover > .dropbox,
+.dropbox:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding: 20px;
+}

@@ -1,0 +1,65 @@
+@use "../project/spacer";
+@use "../project/breakpoints";
+
+.column--header {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+  
+    justify-content: center;
+    gap: spacer.$primary-spacer;
+  
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .column-services {
+    @media (min-width: breakpoints.$bp-xl) {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+.columns-two {
+    @media (min-width:breakpoints.$bp-xl) {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+      
+        gap: spacer.$double-spacer;
+      
+}}
+
+
+.colums--cards {
+    @media (min-width:breakpoints.$bp-m) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: spacer.$primary-spacer;
+    }
+  }
+
+  .column--hero {
+
+    @media   (min-width:breakpoints.$bp-xs) {
+        display: grid;
+        grid-template-columns: auto 310px auto;
+        grid-template-rows: repeat(4,auto);
+   
+    }
+
+    @media   (min-width:breakpoints.$bp-s) {
+        display: grid;
+        grid-template-columns: auto 450px auto;
+        grid-template-rows: repeat(4,auto);
+   
+    }
+
+    @media  screen and (min-width:breakpoints.$bp-xl) {
+        
+        grid-template-columns: auto 770px auto;
+       
+        
+   
+    }
+}

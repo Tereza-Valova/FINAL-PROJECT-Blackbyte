@@ -1,0 +1,17 @@
+@use "../project/spacer";
+
+.hero,
+.services,
+.about-us,
+.blockquote,
+.price {
+  padding: spacer.$double-spacer 0;
+}
+
+.header {
+  padding: spacer.$primary-spacer spacer.$double-spacer;
+}
+
+.footer {
+  padding: spacer.$double-spacer 0 0 0;
+}

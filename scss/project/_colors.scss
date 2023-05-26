@@ -1,0 +1,21 @@
+$c-primary-theme: #202020;
+$c-secondary-theme:#000000;
+$c-tertiary-theme: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(52,147,145,1) 35%);
+
+$c-primary: #dfdfdf;
+$c-secondary: #349391;
+$c-tertiary: #05fffb;
+
+$c-additional: #808080;
+$c-additional-opacity:  rgb(29, 154, 152, 0.1);
+
+$c-layer:#349391cc;
+$c-secondary-layer:#01010140;
+
+body {
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

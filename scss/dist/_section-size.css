@@ -1,0 +1,15 @@
+.services,
+.about-us,
+.blockquote,
+.price,
+.footer {
+  padding-bottom: 20px;
+}
+
+.hero {
+  padding-bottom: 40px;
+}
+
+.header {
+  padding: 40px;
+}

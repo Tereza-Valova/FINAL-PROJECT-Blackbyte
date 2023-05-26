@@ -1,0 +1,104 @@
+.services__header,
+.about-us__header,
+.price__header,
+.footer__header,
+.description__header {
+  color: #349391;
+  font-family: "Jura", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 40px 20px;
+  position: relative;
+  margin: 0;
+}
+@media screen and (min-width: 1200px) {
+  .services__header,
+.about-us__header,
+.price__header,
+.footer__header,
+.description__header {
+    font-size: 36px;
+    padding: 40px 120px;
+  }
+}
+.services__header::before,
+.about-us__header::before,
+.price__header::before,
+.footer__header::before,
+.description__header::before {
+  content: "";
+  display: block;
+  height: 35px;
+  margin-left: -10px;
+  margin-bottom: -30px;
+  border-left: 1px solid #05fffb;
+  color: #05fffb;
+}
+@media screen and (min-width: 1200px) {
+  .services__header::before,
+.about-us__header::before,
+.price__header::before,
+.footer__header::before,
+.description__header::before {
+    height: 70px;
+    margin-left: -20px;
+    margin-bottom: -55px;
+  }
+}
+.services__header::after,
+.about-us__header::after,
+.price__header::after,
+.footer__header::after,
+.description__header::after {
+  content: "";
+  display: block;
+  height: 35px;
+  margin-left: 200px;
+  margin-top: -28px;
+  border-left: 1px solid #05fffb;
+  color: #05fffb;
+}
+@media screen and (min-width: 1200px) {
+  .services__header::after,
+.about-us__header::after,
+.price__header::after,
+.footer__header::after,
+.description__header::after {
+    content: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services__header--large {
+    padding: 40px 120px;
+    margin: 0 120px 40px 120px;
+  }
+}
+
+.price__header--modification {
+  color: #05fffb;
+  font-family: "Jura", sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding: 0 20px 20px 0;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .price__header--modification {
+    font-size: 36px;
+    padding: 40px 120px;
+  }
+}
+
+.form__header {
+  color: #05fffb;
+  font-family: "Jura", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 0 20px 20px 0;
+}
+@media (min-width: 1000px) {
+  .form__header {
+    font-size: 36px;
+  }
+}

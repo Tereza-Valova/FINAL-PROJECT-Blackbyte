@@ -1,0 +1,23 @@
+@use "../project/breakpoints";
+@use "../project/colors";
+@use "../project/spacer";
+@use "../project/fonts";
+
+
+.aside {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap:spacer.$half-spacer;
+    justify-content: center;
+    padding-bottom: spacer.$double-spacer;
+
+    @media (min-width:breakpoints.$bp-xl) {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 200px);
+        align-items: center;
+  
+      
+    }
+
+ 
+}

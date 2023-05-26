@@ -1,0 +1,71 @@
+@media (min-width: 1200px) {
+  .column-services {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.services__offer {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.offer__image {
+  max-height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .offer__image {
+    max-height: 230px;
+  }
+}
+.offer__text {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #DFDFDF;
+  margin: 0 20px;
+  padding: 10px 20px;
+  background-color: #349391cc;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  max-width: 600px;
+  height: 170px;
+}
+@media screen and (min-width: 600px) {
+  .offer__text {
+    height: 180px;
+    padding: 20px 40px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .offer__text {
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offer__text {
+    height: 200px;
+  }
+}
+.offer__main-text {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 10px;
+}
+@media screen and (min-width: 600px) {
+  .offer__main-text {
+    font-size: 20px;
+  }
+}
+.offer__description {
+  font-size: 14px;
+}
+@media screen and (min-width: 600px) {
+  .offer__description {
+    font-size: 16px;
+  }
+}

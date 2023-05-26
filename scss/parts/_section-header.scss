@@ -1,0 +1,87 @@
+@use "../project/breakpoints";
+@use "../project/colors";
+@use "../project/spacer";
+@use "../project/fonts";
+
+.services__header,
+.about-us__header,
+.price__header,
+.footer__header,
+.description__header {
+  color: colors.$c-secondary;
+  font-family: fonts.$f-primary;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: spacer.$double-spacer spacer.$primary-spacer;
+  position: relative;
+  margin: 0;
+
+  @media screen and (min-width: breakpoints.$bp-xl) {
+    font-size: 36px;
+    padding: spacer.$double-spacer spacer.$extra-large-spacer;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+
+    height: 35px;
+    margin-left: -10px;
+    margin-bottom: -30px;
+
+    border-left: 1px solid colors.$c-tertiary;
+
+    color: colors.$c-tertiary;
+
+    @media screen and (min-width: breakpoints.$bp-xl) {
+      height: 70px;
+      margin-left: -20px;
+      margin-bottom: -55px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+
+    height: 35px;
+    margin-left: 200px;
+
+    margin-top: -28px;
+
+    border-left: 1px solid colors.$c-tertiary;
+
+    color: colors.$c-tertiary;
+
+    @media screen and (min-width:breakpoints.$bp-xl) {
+      content: none;
+    }
+  }
+}
+
+.price__header--modification {
+  color: colors.$c-tertiary;
+  font-family: fonts.$f-primary;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding: 0 spacer.$primary-spacer spacer.$primary-spacer 0;
+  text-align: center;
+  margin:0;
+
+  @media  (min-width:breakpoints.$bp-xl) {
+    font-size: 36px;
+    padding: spacer.$double-spacer spacer.$extra-large-spacer;
+  }
+}
+
+.form__header {
+  color: colors.$c-tertiary;
+  font-family: fonts.$f-primary;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 0 spacer.$primary-spacer spacer.$primary-spacer 0;
+
+  @media (min-width: breakpoints.$bp-l) {
+    font-size: 36px;
+  }
+}

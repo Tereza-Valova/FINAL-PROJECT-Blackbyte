@@ -1,0 +1,47 @@
+@use "../project/breakpoints";
+@use "../project/colors";
+@use "../project/spacer";
+@use "../project/fonts";
+
+
+.price {
+  background-color: colors.$c-primary-theme;
+  margin: 0 auto;
+  max-width: 1600px;
+
+  &__text {
+    color: colors.$c-primary;
+    font-family: fonts.$f-secondary;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: spacer.$half-spacer;
+
+    &--highlight {
+      font-family: fonts.$f-secondary;
+      font-size: 20px;
+      color: colors.$c-tertiary;
+
+      @media (min-width: breakpoints.$bp-s) {
+        font-size: 24px;
+      }
+    }
+
+    @media (min-width: breakpoints.$bp-s) {
+      font-size: 16px;
+    }
+
+    @media (min-width: breakpoints.$bp-xl) {
+      font-size: 20px;
+    }
+  }
+
+  &--modification  {
+    background-color: colors.$c-primary-theme;
+
+  
+    @media (min-width:breakpoints.$bp-xl) {
+      grid-column: 2;
+    }
+
+}
+}
