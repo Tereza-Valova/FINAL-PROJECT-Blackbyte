@@ -3,7 +3,6 @@
 @use "../project/spacer";
 @use "../project/fonts";
 
-
 .about-us__text {
   color: colors.$c-primary;
   font-family: fonts.$f-secondary;
@@ -21,5 +20,3 @@
       spacer.$extra-large-spacer;
   }
 }
-
-

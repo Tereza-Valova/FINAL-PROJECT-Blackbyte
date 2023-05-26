@@ -24,13 +24,10 @@
   &::before {
     content: "";
     display: block;
-
     height: 35px;
     margin-left: -10px;
     margin-bottom: -30px;
-
-    border-left: 1px solid colors.$c-tertiary;
-
+   border-left: 1px solid colors.$c-tertiary;
     color: colors.$c-tertiary;
 
     @media screen and (min-width: breakpoints.$bp-xl) {
@@ -43,14 +40,10 @@
   &::after {
     content: "";
     display: block;
-
     height: 35px;
     margin-left: 200px;
-
     margin-top: -28px;
-
     border-left: 1px solid colors.$c-tertiary;
-
     color: colors.$c-tertiary;
 
     @media screen and (min-width:breakpoints.$bp-xl) {

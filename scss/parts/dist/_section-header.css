@@ -1,15 +1,9 @@
-body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .services__header,
 .about-us__header,
 .price__header,
 .footer__header,
 .description__header {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -37,8 +31,8 @@ body {
   height: 35px;
   margin-left: -10px;
   margin-bottom: -30px;
-  border-left: 1px solid #05fffb;
-  color: #05fffb;
+  border-left: 1px solid #2BDF5B;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 1200px) {
   .services__header::before,
@@ -61,8 +55,8 @@ body {
   height: 35px;
   margin-left: 200px;
   margin-top: -28px;
-  border-left: 1px solid #05fffb;
-  color: #05fffb;
+  border-left: 1px solid #2BDF5B;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 1200px) {
   .services__header::after,
@@ -75,7 +69,7 @@ body {
 }
 
 .price__header--modification {
-  color: #05fffb;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 28px;
@@ -91,7 +85,7 @@ body {
 }
 
 .form__header {
-  color: #05fffb;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 20px;

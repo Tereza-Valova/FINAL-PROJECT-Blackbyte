@@ -55,24 +55,20 @@
     padding: spacer.$primary-spacer spacer.$double-spacer;
 
     &--side {
-        margin: 0 auto;
-        display: block;
-        max-width: 90%;
-       margin-bottom: spacer.$double-spacer;
+      margin: 0 auto;
+      display: block;
+      max-width: 90%;
+      margin-bottom: spacer.$double-spacer;
 
-        
-        @media (min-width:breakpoints.$bp-m) {
-           
-            max-width:40%;
-         
-          }
+      @media (min-width: breakpoints.$bp-m) {
+        max-width: 40%;
+      }
 
-
-        @media (min-width:breakpoints.$bp-l) {
-      padding: spacer.$special-spacer spacer.$double-special-spacer;
-      width: 60%;
-   
-    }}
+      @media (min-width: breakpoints.$bp-l) {
+        padding: spacer.$special-spacer spacer.$double-special-spacer;
+        width: 60%;
+      }
+    }
   }
 
   &__aside {
@@ -96,7 +92,6 @@
       &:hover {
         transform: none;
         box-shadow: none;
-
       }
     }
 
@@ -107,8 +102,6 @@
   }
 
   &__form {
-  
-
     @media (min-width: breakpoints.$bp-xl) {
       padding: spacer.$primary-spacer spacer.$double-special-spacer;
       font-size: 20px;
@@ -117,9 +110,7 @@
 }
 
 .footer__img {
-   margin: 0 auto;
-   display: block;
-   padding: spacer.$double-spacer 0;
- 
-
+  margin: 0 auto;
+  display: block;
+  padding: spacer.$double-spacer 0;
 }

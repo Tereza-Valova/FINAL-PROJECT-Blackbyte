@@ -14,10 +14,6 @@
     @media (min-width:breakpoints.$bp-xl) {
         grid-template-columns: none;
         grid-template-rows: repeat(3, 200px);
-        align-items: center;
-  
-      
+        align-items: center;   
     }
-
- 
 }

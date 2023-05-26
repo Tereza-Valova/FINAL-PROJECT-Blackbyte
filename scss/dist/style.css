@@ -9,20 +9,12 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #202020;
 }
 
 .button {
   background: #000000;
-  box-shadow: 0 2px 5px 0 #349391;
+  box-shadow: 0 2px 5px 0 #2BDF5B;
   backdrop-filter: blur(1px);
   padding: 10px 20px;
   border-radius: 40px;
@@ -34,12 +26,12 @@ body {
   text-align: center;
   margin: 30px;
   text-decoration: none;
-  box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  box-shadow: inset 0px 5px 10px 0px #2BDF5B;
   transition: all ease 0.2s;
 }
 .button:hover {
   transform: translateY(5px);
-  box-shadow: inset 0px 20px 20px 2px rgba(0, 255, 255, 0.7);
+  box-shadow: inset 0px 20px 20px 2px #2BDF5B;
 }
 .button__offer {
   width: 50;
@@ -74,25 +66,37 @@ body {
   padding: 20px 40px;
 }
 .button__price--side {
-  padding: 30px 60px;
-  width: 60%;
   margin: 0 auto;
   display: block;
+  max-width: 90%;
+  margin-bottom: 40px;
+}
+@media (min-width: 800px) {
+  .button__price--side {
+    max-width: 40%;
+  }
+}
+@media (min-width: 1000px) {
+  .button__price--side {
+    padding: 30px 60px;
+    width: 60%;
+  }
 }
 .button__aside {
   padding: 15px 5px;
   margin: 0;
   text-align: center;
   font-size: 10px;
-  background: #01010140;
+  background: #00000040;
   color: #dfdfdf;
   border-radius: 10px;
   font-family: "Jura", sans-serif;
-  box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  box-shadow: inset 0px 5px 10px 0px #2BDF5B;
   transition: all ease 0.2s;
 }
 .button__aside--active {
-  background-color: #349391;
+  background-color: #2BDF5B;
+  color: #000000;
   box-shadow: none;
   transition: none;
 }
@@ -106,14 +110,17 @@ body {
     font-size: 20px;
   }
 }
-.button__form {
-  background: #349391;
-}
 @media (min-width: 1200px) {
   .button__form {
     padding: 20px 60px;
     font-size: 20px;
   }
+}
+
+.footer__img {
+  margin: 0 auto;
+  display: block;
+  padding: 40px 0;
 }
 
 .card {
@@ -156,10 +163,9 @@ body {
 
 .form {
   padding: 20px 0;
-  box-shadow: 0 2px 5px 0 #349391;
+  box-shadow: 0 2px 5px 0 #2BDF5B;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 20px;
 }
 @media (min-width: 1000px) {
   .form {
@@ -168,11 +174,11 @@ body {
 }
 
 .form__label {
-  color: #05fffb;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
 }
 .form__label--checkbox {
-  color: #05fffb;
+  color: #2BDF5B;
   font-size: 18px;
 }
 @media (min-width: 1000px) {
@@ -207,29 +213,6 @@ body {
   .form__input--message {
     font-size: 20px;
   }
-}
-
-.wrapper .form {
-  background-color: rgba(29, 154, 152, 0.1);
-}
-
-.navbar {
-  list-style: none;
-  text-transform: uppercase;
-}
-@media (min-width: 1200px) {
-  .navbar {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 20px;
-  }
-}
-.navbar__list {
-  color: #dfdfdf;
-  padding-bottom: 20px;
-}
-.navbar__item {
-  padding-bottom: 10px;
 }
 
 .column--header {
@@ -297,13 +280,7 @@ body {
 .blockquote,
 .footer,
 .form {
-  margin: 0 auto;
-  max-width: 1600px;
   background-color: #202020;
-}
-
-.blockquote {
-  background-color: #349391;
 }
 
 .wrapper {
@@ -312,24 +289,15 @@ body {
   padding: 0 50px 40px;
   background-color: #202020;
 }
-.wrapper--footer {
-  background-image: linear-gradient(rgba(64, 63, 63, 0.45), rgba(52, 147, 145, 0.35)), url(../images/bubbles.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.wrapper--full-screen {
-  max-width: 1600px;
-  margin: 0 auto;
-}
 .wrapper--inner {
   padding: 0 50px 40px;
 }
 .wrapper--inner--layer {
-  background: #01010140;
+  background: #00000040;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(5px);
-  color: #349391;
+  color: #2BDF5B;
   padding: 40px;
   margin: 20px 20px 40px 20px;
   border-radius: 5px;
@@ -387,14 +355,14 @@ body {
 }
 
 .blockquote {
-  color: #000000;
-  background-color: #349391;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/backg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #dfdfdf;
   font-family: "Jura", sans-serif;
   font-size: 24px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  box-shadow: 0px 1px 10px -2px #05fffb;
+  margin: 0;
 }
 @media (min-width: 800px) {
   .blockquote {
@@ -415,7 +383,7 @@ body {
   }
 }
 .colums--two--footer__information {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
 }
@@ -430,6 +398,12 @@ body {
     padding-top: 40px;
     margin-top: 10px;
   }
+}
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/backg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__logo {
@@ -459,7 +433,7 @@ body {
   font-size: 14px;
 }
 .header__menu ul :hover {
-  color: #05fffb;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 600px) {
   .header__menu ul {
@@ -489,7 +463,7 @@ body {
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: #05fffb;
+  background-color: #2BDF5B;
   opacity: 1;
   transition: opacity 300ms, transform 300ms;
   transform: scale(0);
@@ -520,7 +494,7 @@ body {
 }
 .dropbox__item--style:hover {
   padding-left: 10px;
-  border-left: 2px solid #05fffb;
+  border-left: 2px solid #2BDF5B;
   transition: all 0.3s ease;
 }
 
@@ -535,16 +509,15 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../images/bgg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/backg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 600px;
   box-shadow: 0px 15px 15px 3px rgba(197, 197, 197, 0.5);
   margin: 0 auto;
-  max-width: 1600px;
 }
 .hero__title {
-  color: #000000;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 56px;
@@ -571,7 +544,7 @@ body {
   }
 }
 .hero__text {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   text-align: right;
@@ -597,9 +570,7 @@ body {
 }
 
 .price {
-  background-color: #202020;
   margin: 0 auto;
-  max-width: 1600px;
 }
 .price__text {
   color: #dfdfdf;
@@ -611,7 +582,7 @@ body {
 .price__text--highlight {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
-  color: #05fffb;
+  color: #2BDF5B;
 }
 @media (min-width: 600px) {
   .price__text--highlight {
@@ -628,7 +599,6 @@ body {
     font-size: 20px;
   }
 }
-
 .price--modification {
   background-color: #202020;
 }
@@ -649,7 +619,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  box-shadow: 0px 1px 10px 0px #349391;
+  box-shadow: 0px 1px 10px 0px #2BDF5B;
 }
 @media screen and (min-width: 600px) {
   .offer__image {
@@ -661,7 +631,7 @@ body {
   color: #dfdfdf;
   margin: 0 20px;
   padding: 10px 20px;
-  background-color: #349391cc;
+  background-color: rgba(78, 77, 77, 0.95);
   position: absolute;
   top: 20%;
   text-align: center;
@@ -710,7 +680,7 @@ body {
 .price__header,
 .footer__header,
 .description__header {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -738,8 +708,8 @@ body {
   height: 35px;
   margin-left: -10px;
   margin-bottom: -30px;
-  border-left: 1px solid #05fffb;
-  color: #05fffb;
+  border-left: 1px solid #2BDF5B;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 1200px) {
   .services__header::before,
@@ -762,8 +732,8 @@ body {
   height: 35px;
   margin-left: 200px;
   margin-top: -28px;
-  border-left: 1px solid #05fffb;
-  color: #05fffb;
+  border-left: 1px solid #2BDF5B;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 1200px) {
   .services__header::after,
@@ -776,12 +746,13 @@ body {
 }
 
 .price__header--modification {
-  color: #05fffb;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 28px;
   padding: 0 20px 20px 0;
   text-align: center;
+  margin: 0;
 }
 @media (min-width: 1200px) {
   .price__header--modification {
@@ -791,7 +762,7 @@ body {
 }
 
 .form__header {
-  color: #05fffb;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
