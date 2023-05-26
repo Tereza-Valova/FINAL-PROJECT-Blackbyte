@@ -23,3 +23,10 @@
     }
 }
 
+.copyright {
+    text-align: right;
+    color: colors.$c-secondary;
+    font-family: fonts.$f-primary;
+    font-size: 10px;
+    padding: spacer.$primary-spacer;
+}
