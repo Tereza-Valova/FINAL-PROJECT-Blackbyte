@@ -1,13 +1,14 @@
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1600px;
   padding: 0 50px 40px;
   background-color: #202020;
-}
-.wrapper--footer {
-  background-image: linear-gradient(rgba(64, 63, 63, 0.45), rgba(52, 147, 145, 0.35)), url(../images/bubbles.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .wrapper--full-screen {
   max-width: 1600px;
@@ -21,7 +22,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(5px);
-  color: #349391;
+  color: #2BDF5B;
   padding: 40px;
   margin: 20px 20px 40px 20px;
   border-radius: 5px;

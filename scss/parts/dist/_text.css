@@ -1,6 +1,12 @@
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .about-us__text,
 .description__text {
-  color: #DFDFDF;
+  color: #dfdfdf;
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1.6;
   font-size: 14px;

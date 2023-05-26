@@ -1,12 +1,19 @@
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .blockquote {
-  color: #000000;
-  background-color: #349391;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/backg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #dfdfdf;
   font-family: "Jura", sans-serif;
   font-size: 24px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 60px;
-  box-shadow: 0px 1px 10px -2px #05fffb;
 }
 @media (min-width: 800px) {
   .blockquote {

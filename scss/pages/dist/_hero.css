@@ -5,7 +5,7 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../images/bgg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/backg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 600px;
@@ -14,7 +14,7 @@ body {
   max-width: 1600px;
 }
 .hero__title {
-  color: #000000;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 56px;
@@ -41,7 +41,7 @@ body {
   }
 }
 .hero__text {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   text-align: right;

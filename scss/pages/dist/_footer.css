@@ -1,3 +1,9 @@
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 1200px) {
   .colums--two--footer {
     display: grid;
@@ -6,7 +12,7 @@
   }
 }
 .colums--two--footer__information {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
 }
@@ -21,4 +27,10 @@
     padding-top: 40px;
     margin-top: 10px;
   }
+}
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/backg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

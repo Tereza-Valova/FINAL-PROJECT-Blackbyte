@@ -17,12 +17,12 @@
   text-align: center;
   margin: 30px;
   text-decoration: none;
-  box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  box-shadow: inset 0px 5px 10px 0px colors.$c-secondary;
   transition: all ease 0.2s;
 
   &:hover {
     transform: translateY(5px);
-    box-shadow: inset 0px 20px 20px 2px rgba(0, 255, 255, 0.7);
+    box-shadow: inset 0px 20px 20px 2px colors.$c-secondary;
   }
 
   &__offer {
@@ -83,17 +83,19 @@
     color: colors.$c-primary;
     border-radius: spacer.$half-spacer;
     font-family: fonts.$f-primary;
-    box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+    box-shadow: inset 0px 5px 10px 0px colors.$c-secondary;
     transition: all ease 0.2s;
 
     &--active {
       background-color: colors.$c-secondary;
+      color: colors.$c-secondary-theme;
       box-shadow: none;
       transition: none;
 
       &:hover {
         transform: none;
         box-shadow: none;
+
       }
     }
 
@@ -104,7 +106,7 @@
   }
 
   &__form {
-    background: colors.$c-secondary;
+  
 
     @media (min-width: breakpoints.$bp-xl) {
       padding: spacer.$primary-spacer spacer.$double-special-spacer;

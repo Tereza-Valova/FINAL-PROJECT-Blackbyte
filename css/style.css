@@ -22,7 +22,7 @@ body {
 
 .button {
   background: #000000;
-  box-shadow: 0 2px 5px 0 #349391;
+  box-shadow: 0 2px 5px 0 #2BDF5B;
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
   padding: 10px 20px;
@@ -35,12 +35,12 @@ body {
   text-align: center;
   margin: 30px;
   text-decoration: none;
-  box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  box-shadow: inset 0px 5px 10px 0px #2BDF5B;
   transition: all ease 0.2s;
 }
 .button:hover {
   transform: translateY(5px);
-  box-shadow: inset 0px 20px 20px 2px rgba(0, 255, 255, 0.7);
+  box-shadow: inset 0px 20px 20px 2px #2BDF5B;
 }
 .button__offer {
   width: 50;
@@ -95,15 +95,16 @@ body {
   margin: 0;
   text-align: center;
   font-size: 10px;
-  background: rgba(1, 1, 1, 0.2509803922);
+  background: rgba(0, 0, 0, 0.2509803922);
   color: #dfdfdf;
   border-radius: 10px;
   font-family: "Jura", sans-serif;
-  box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+  box-shadow: inset 0px 5px 10px 0px #2BDF5B;
   transition: all ease 0.2s;
 }
 .button__aside--active {
-  background-color: #349391;
+  background-color: #2BDF5B;
+  color: #000000;
   box-shadow: none;
   transition: none;
 }
@@ -116,9 +117,6 @@ body {
     padding: 60px;
     font-size: 20px;
   }
-}
-.button__form {
-  background: #349391;
 }
 @media (min-width: 1200px) {
   .button__form {
@@ -167,7 +165,7 @@ body {
 
 .form {
   padding: 20px 0;
-  box-shadow: 0 2px 5px 0 #349391;
+  box-shadow: 0 2px 5px 0 #2BDF5B;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 20px;
@@ -179,11 +177,11 @@ body {
 }
 
 .form__label {
-  color: #05fffb;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
 }
 .form__label--checkbox {
-  color: #05fffb;
+  color: #2BDF5B;
   font-size: 18px;
 }
 @media (min-width: 1000px) {
@@ -221,7 +219,7 @@ body {
 }
 
 .wrapper .form {
-  background-color: rgba(29, 154, 152, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -314,7 +312,7 @@ body {
 }
 
 .blockquote {
-  background-color: #349391;
+  background-color: #2BDF5B;
 }
 
 .wrapper {
@@ -322,11 +320,6 @@ body {
   max-width: 1600px;
   padding: 0 50px 40px;
   background-color: #202020;
-}
-.wrapper--footer {
-  background-image: linear-gradient(rgba(64, 63, 63, 0.45), rgba(52, 147, 145, 0.35)), url(../images/bubbles.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .wrapper--full-screen {
   max-width: 1600px;
@@ -336,11 +329,11 @@ body {
   padding: 0 50px 40px;
 }
 .wrapper--inner--layer {
-  background: rgba(1, 1, 1, 0.2509803922);
+  background: rgba(0, 0, 0, 0.2509803922);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(5px);
-  color: #349391;
+  color: #2BDF5B;
   padding: 40px;
   margin: 20px 20px 40px 20px;
   border-radius: 5px;
@@ -398,14 +391,15 @@ body {
 }
 
 .blockquote {
-  color: #000000;
-  background-color: #349391;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/backg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #dfdfdf;
   font-family: "Jura", sans-serif;
   font-size: 24px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 60px;
-  box-shadow: 0px 1px 10px -2px rgb(5, 255, 251);
 }
 @media (min-width: 800px) {
   .blockquote {
@@ -426,7 +420,7 @@ body {
   }
 }
 .colums--two--footer__information {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
 }
@@ -441,6 +435,12 @@ body {
     padding-top: 40px;
     margin-top: 10px;
   }
+}
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/backg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__logo {
@@ -470,7 +470,7 @@ body {
   font-size: 14px;
 }
 .header__menu ul :hover {
-  color: #05fffb;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 600px) {
   .header__menu ul {
@@ -500,7 +500,7 @@ body {
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: #05fffb;
+  background-color: #2BDF5B;
   opacity: 1;
   transition: opacity 300ms, transform 300ms;
   transform: scale(0);
@@ -531,7 +531,7 @@ body {
 }
 .dropbox__item--style:hover {
   padding-left: 10px;
-  border-left: 2px solid #05fffb;
+  border-left: 2px solid #2BDF5B;
   transition: all 0.3s ease;
 }
 
@@ -546,7 +546,7 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../images/bgg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/backg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 600px;
@@ -555,7 +555,7 @@ body {
   max-width: 1600px;
 }
 .hero__title {
-  color: #000000;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 56px;
@@ -582,7 +582,7 @@ body {
   }
 }
 .hero__text {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   text-align: right;
@@ -622,7 +622,7 @@ body {
 .price__text--highlight {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
-  color: #05fffb;
+  color: #2BDF5B;
 }
 @media (min-width: 600px) {
   .price__text--highlight {
@@ -659,7 +659,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  box-shadow: 0px 1px 10px 0px rgb(52, 147, 145);
+  box-shadow: 0px 1px 10px 0px #2BDF5B;
 }
 @media screen and (min-width: 600px) {
   .offer__image {
@@ -671,7 +671,7 @@ body {
   color: #dfdfdf;
   margin: 0 20px;
   padding: 10px 20px;
-  background-color: rgba(52, 147, 145, 0.8);
+  background-color: rgba(78, 77, 77, 0.95);
   position: absolute;
   top: 20%;
   text-align: center;
@@ -720,7 +720,7 @@ body {
 .price__header,
 .footer__header,
 .description__header {
-  color: #349391;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -748,8 +748,8 @@ body {
   height: 35px;
   margin-left: -10px;
   margin-bottom: -30px;
-  border-left: 1px solid #05fffb;
-  color: #05fffb;
+  border-left: 1px solid #2BDF5B;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 1200px) {
   .services__header::before,
@@ -772,8 +772,8 @@ body {
   height: 35px;
   margin-left: 200px;
   margin-top: -28px;
-  border-left: 1px solid #05fffb;
-  color: #05fffb;
+  border-left: 1px solid #2BDF5B;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 1200px) {
   .services__header::after,
@@ -786,7 +786,7 @@ body {
 }
 
 .price__header--modification {
-  color: #05fffb;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 28px;
@@ -802,7 +802,7 @@ body {
 }
 
 .form__header {
-  color: #05fffb;
+  color: #2BDF5B;
   font-family: "Jura", sans-serif;
   text-transform: uppercase;
   font-size: 20px;

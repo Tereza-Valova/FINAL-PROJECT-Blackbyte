@@ -1,3 +1,9 @@
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .aside,
 .header,
 .hero,

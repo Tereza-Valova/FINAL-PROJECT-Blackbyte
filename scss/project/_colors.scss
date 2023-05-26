@@ -3,14 +3,14 @@ $c-secondary-theme:#000000;
 $c-tertiary-theme: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(52,147,145,1) 35%);
 
 $c-primary: #dfdfdf;
-$c-secondary: #349391;
-$c-tertiary: #05fffb;
+$c-secondary: #2BDF5B;
+$c-tertiary: #2BDF5B;
 
 $c-additional: #808080;
-$c-additional-opacity:  rgb(29, 154, 152, 0.1);
+$c-additional-opacity:  rgba(0, 0, 0, 0.1);
 
-$c-layer:#349391cc;
-$c-secondary-layer:#01010140;
+$c-layer:#2BDF5B;
+$c-secondary-layer:#00000040;
 
 body {
     background-image:  linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
@@ -19,3 +19,23 @@ body {
     background-size: cover;
 
 }
+// rgba(0, 255, 255, 0.7);
+// offer box shadow rgba(52, 147, 145, 1)
+
+// $c-layer:#349391cc;
+
+// .wrapper {
+//   margin: 0 auto;
+//   max-width: 1600px;
+//   padding: 0 50px spacer.$double-spacer;
+//   background-color: colors.$c-primary-theme;
+
+//   &--footer {
+//     background-image: linear-gradient(
+//         rgba(64, 63, 63, 0.45),
+//         rgba(52, 147, 145, 0.35)
+//       ),
+//       url(../images/backg.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//   }
