@@ -9,15 +9,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #202020;
 }
 
 .button {
@@ -77,11 +69,12 @@ body {
 .button__price--side {
   margin: 0 auto;
   display: block;
-  width: 90%;
+  max-width: 90%;
+  margin-bottom: 40px;
 }
 @media (min-width: 800px) {
   .button__price--side {
-    width: 80%;
+    max-width: 40%;
   }
 }
 @media (min-width: 1000px) {
@@ -123,6 +116,12 @@ body {
     padding: 20px 60px;
     font-size: 20px;
   }
+}
+
+.footer__img {
+  margin: 0 auto;
+  display: block;
+  padding: 40px 0;
 }
 
 .card {
@@ -168,7 +167,6 @@ body {
   box-shadow: 0 2px 5px 0 #2BDF5B;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 20px;
 }
 @media (min-width: 1000px) {
   .form {
@@ -216,29 +214,6 @@ body {
   .form__input--message {
     font-size: 20px;
   }
-}
-
-.wrapper .form {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-  list-style: none;
-  text-transform: uppercase;
-}
-@media (min-width: 1200px) {
-  .navbar {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 20px;
-  }
-}
-.navbar__list {
-  color: #dfdfdf;
-  padding-bottom: 20px;
-}
-.navbar__item {
-  padding-bottom: 10px;
 }
 
 .column--header {
@@ -306,13 +281,7 @@ body {
 .blockquote,
 .footer,
 .form {
-  margin: 0 auto;
-  max-width: 1600px;
   background-color: #202020;
-}
-
-.blockquote {
-  background-color: #2BDF5B;
 }
 
 .wrapper {
@@ -320,10 +289,6 @@ body {
   max-width: 1600px;
   padding: 0 50px 40px;
   background-color: #202020;
-}
-.wrapper--full-screen {
-  max-width: 1600px;
-  margin: 0 auto;
 }
 .wrapper--inner {
   padding: 0 50px 40px;
@@ -398,8 +363,7 @@ body {
   font-family: "Jura", sans-serif;
   font-size: 24px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  margin: 0;
 }
 @media (min-width: 800px) {
   .blockquote {
@@ -552,7 +516,6 @@ body {
   max-height: 600px;
   box-shadow: 0px 15px 15px 3px rgba(197, 197, 197, 0.5);
   margin: 0 auto;
-  max-width: 1600px;
 }
 .hero__title {
   color: #2BDF5B;
@@ -610,7 +573,6 @@ body {
 .price {
   background-color: #202020;
   margin: 0 auto;
-  max-width: 1600px;
 }
 .price__text {
   color: #dfdfdf;

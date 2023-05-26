@@ -10,11 +10,6 @@
   padding: 0 50px spacer.$double-spacer;
   background-color: colors.$c-primary-theme;
 
-  &--full-screen {
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-
   &--inner {
     padding: 0 50px spacer.$double-spacer;
     &--layer {

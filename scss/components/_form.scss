@@ -8,7 +8,6 @@
   box-shadow: 0 2px 5px 0 colors.$c-secondary;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: spacer.$primary-spacer;
 
   @media (min-width: 1000px) {
     padding: spacer.$double-spacer 0;
@@ -55,8 +54,4 @@
       font-size: 20px;
     }
   }
-}
-
-.wrapper .form {
-  background-color: colors.$c-additional-opacity;
 }

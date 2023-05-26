@@ -1,24 +1,14 @@
-body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .wrapper {
   margin: 0 auto;
   max-width: 1600px;
   padding: 0 50px 40px;
   background-color: #202020;
 }
-.wrapper--full-screen {
-  max-width: 1600px;
-  margin: 0 auto;
-}
 .wrapper--inner {
   padding: 0 50px 40px;
 }
 .wrapper--inner--layer {
-  background: #01010140;
+  background: #00000040;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(5px);

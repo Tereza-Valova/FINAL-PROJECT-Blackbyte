@@ -1,25 +1,25 @@
-@use "../project/breakpoints";
-@use "../project/colors";
-@use "../project/spacer";
-@use "../project/fonts";
+// @use "../project/breakpoints";
+// @use "../project/colors";
+// @use "../project/spacer";
+// @use "../project/fonts";
 
 
-.navbar {
-  list-style: none;
-  text-transform: uppercase;
+// .navbar {
+//   list-style: none;
+//   text-transform: uppercase;
 
-  @media (min-width:breakpoints.$bp-xl) {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 20px;
-  }
+//   @media (min-width:breakpoints.$bp-xl) {
+//     grid-column: 2;
+//     grid-row: 2;
+//     font-size: 20px;
+//   }
 
-  &__list {
-    color: colors.$c-primary;
-    padding-bottom: spacer.$primary-spacer;
-  }
+//   &__list {
+//     color: colors.$c-primary;
+//     padding-bottom: spacer.$primary-spacer;
+//   }
 
-  &__item {
-    padding-bottom: spacer.$half-spacer;
-  }
-}
+//   &__item {
+//     padding-bottom: spacer.$half-spacer;
+//   }
+// }

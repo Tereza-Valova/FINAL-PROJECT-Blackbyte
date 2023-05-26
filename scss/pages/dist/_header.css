@@ -25,7 +25,7 @@
   font-size: 14px;
 }
 .header__menu ul :hover {
-  color: #05fffb;
+  color: #2BDF5B;
 }
 @media screen and (min-width: 600px) {
   .header__menu ul {
@@ -39,10 +39,10 @@
 }
 
 .menu__item {
-  color: #DFDFDF;
+  color: #dfdfdf;
 }
 .menu__item--style {
-  color: #DFDFDF;
+  color: #dfdfdf;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -55,7 +55,7 @@
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: #05fffb;
+  background-color: #2BDF5B;
   opacity: 1;
   transition: opacity 300ms, transform 300ms;
   transform: scale(0);
@@ -82,11 +82,11 @@
 .dropbox__item--style {
   transition: all 0.5s ease;
   text-decoration: none;
-  color: #DFDFDF;
+  color: #dfdfdf;
 }
 .dropbox__item--style:hover {
   padding-left: 10px;
-  border-left: 2px solid #05fffb;
+  border-left: 2px solid #2BDF5B;
   transition: all 0.3s ease;
 }
 

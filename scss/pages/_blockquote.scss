@@ -9,12 +9,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   color:colors.$c-primary;
-
   font-family: fonts.$f-primary;
   font-size: 24px;
   text-align: center;
-  padding-top: spacer.$special-spacer; 
-  padding-bottom: spacer.$double-special-spacer;
+margin: 0;
   
 
   @media (min-width: breakpoints.$bp-m) {

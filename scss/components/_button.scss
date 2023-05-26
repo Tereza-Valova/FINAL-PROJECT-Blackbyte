@@ -57,12 +57,13 @@
     &--side {
         margin: 0 auto;
         display: block;
-        width: 90%;
+        max-width: 90%;
+       margin-bottom: spacer.$double-spacer;
 
         
         @media (min-width:breakpoints.$bp-m) {
            
-            width: 80%;
+            max-width:40%;
          
           }
 
@@ -113,4 +114,12 @@
       font-size: 20px;
     }
   }
+}
+
+.footer__img {
+   margin: 0 auto;
+   display: block;
+   padding: spacer.$double-spacer 0;
+ 
+
 }

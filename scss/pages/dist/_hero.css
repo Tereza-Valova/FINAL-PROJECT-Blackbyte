@@ -1,9 +1,3 @@
-body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/backg.jpg);
   background-repeat: no-repeat;
@@ -11,7 +5,6 @@ body {
   max-height: 600px;
   box-shadow: 0px 15px 15px 3px rgba(197, 197, 197, 0.5);
   margin: 0 auto;
-  max-width: 1600px;
 }
 .hero__title {
   color: #2BDF5B;
